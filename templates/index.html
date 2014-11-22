@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Shortener</h2>
+<h4>Insert your link to shorten</h4>
+
+<form method="POST" action="/new_link">
+	<label>
+		<input type="text" name="link">
+	</label>
+	<input type="submit" value="Shorten">
+</form>
+
+{% endblock %}

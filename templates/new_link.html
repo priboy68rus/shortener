@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Your link below</h2>
+<input type="text" value="http://localhost:5000/{{ short }}">
+
+<script src="/static/jquery-2.1.1.min.js"></script>
+<script>
+	$("input").select();
+	console.log("ad");
+</script>
+
+{% endblock %}

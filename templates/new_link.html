@@ -1,13 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
+
+<style>
+	#home {
+		margin-top: 10px;
+	}
+</style>
+
 <h2>Your link below</h2>
-<input type="text" value="http://localhost:5000/{{ short }}">
+<input type="text" value="http://priboy68rus.pythonanywhere.com/{{ short }}">
+<br>
+<button id="home" onclick="toHome()">To main page</button>
 
 <script src="/static/jquery-2.1.1.min.js"></script>
 <script>
 	$("input").select();
-	console.log("ad");
+	function toHome() {
+		console.log("123");
+		document.location.href = '/';
+	}
 </script>
 
 {% endblock %}
